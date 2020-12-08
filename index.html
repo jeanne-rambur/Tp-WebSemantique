@@ -12,12 +12,14 @@
     <meta property="og:description" content="Finding your Oogway" />
     <meta name="description" content="Kung Fu Panda is a media franchise by DreamWorks Animation, consisting of three films: Kung Fu Panda (2008), Kung Fu Panda 2 (2011) and Kung Fu Panda 3 (2016). The first two were distributed by Paramount Pictures, while the third film was distributed by 20th Century Fox.">
 
-    <meta name=”twitter:card” content=”summary_large_image”>
-    <meta name=”twitter:site” content=”@yourwebsite”>
-    <meta name=”twitter:creator” content=”@yourtwitterhandle”>
-    <meta name=”twitter:title” content=”your title”>
-    <meta name=”twitter:description” content=”your description.”>
+    <meta name=”twitter:card” content="summary_large_image">
+    <meta name=”twitter:site” content="@yourwebsite">
+    <meta name=”twitter:creator” content="@yourtwitterhandle">
+    <meta name=”twitter:title” content="Accessibilité">
+    <meta name="twitter:card" content="summary" />
+    <meta name=”twitter:description” content="Finding your Oogway">
     <meta name=”twitter:image” content=”https://jeanne-rambur.github.io/Tp-WebSemantique/img/img2.jpg“>
+
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 780px)" href="style/largescreen.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 779px)" href="style/smallscreen.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
@@ -27,35 +29,34 @@
 </head>
 
 <body>
-
     <main>
-        <article>
+        <article itemscope itemtype="http://schema.org/Article">
             <header>
-                <div id="img-article" role="img">
+                <div id="img-article" role="img" aria-label="image">
                 </div>
-                <a href="https://medium.com/swlh/finding-your-oogway-ce52ddab6b9d" title="Article title" target="_blank">
-                    <h1>Finding your Oogway</h1>
+                <a href="https://medium.com/swlh/finding-your-oogway-ce52ddab6b9d" title="Article title" target="_blank" rel="noopener noreferrer">
+                    <h1 itemprop="headline">Finding your Oogway</h1>
                 </a>
-                <p class="author">Written by <span class="author-name">Tarun Kohli</span></p>
-                <p class="date"><time datetime="2018-08-08">14/03/2018</time> | <a href="#_comments">12 Comments</a></p>
+                <p class="author">Written by <span class="author-name" role="contentinfo" aria-label="author name" itemprop="author">Tarun
+            Kohli</span></p>
+                <p class="date"><time datetime="2018-08-08" itemprop="datePublished">14/03/2018</time> | <a href="#_comments" itemprop="commentCount">12 Comments</a></p>
             </header>
 
             <p class="txt-courant">I had fits of laughter watching the big fat Panda struggle to keep up with his accidental ‘Dragon Warrior’ title but I still remember something extraordinary from the movie. <br /> Oogway.
                 <br /> Yes, the wise tortoise.<br /> Without Oogway’s guidance, there wasn’t a chance that an indolent, slacker panda who did nothing except dreaming about learning Kung Fu could have become the Dragon Warrior.
                 <br /><br /> I remember the scene when Po is rejected by Master Shifu and mocked by Furious Five. With his self-confidence shattered, he decides to quit and tell Master Oogway about it just when from the thin air, Oogway appears and says-</p>
 
-
-            <figure>
-                <a href="" title="">
-                    <img src="img/img1.jpg" alt="image" />
+            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <a href="#" title="image">
+                    <img itemprop="url" src="img/img1.jpg" alt="image" />
                 </a>
-                <figcaption>Image from the movie "Kung Fu Panda"</figcaption>
+                <figcaption itemprop="about">Image from the movie "Kung Fu Panda"</figcaption>
             </figure>
 
-            <div class="special-element">
+            <div class="special-element" role="doc-pullquote" aria-label="quote from the movie">
                 <blockquote>
-                    <p> ‘‘You are too concerned with what was and what will be. There's a saying: "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the "present".’’</p>
-                    <cite>Quote from <span class="author-name">the movie</span></cite>
+                    <p itemprop="citation"> ‘‘You are too concerned with what was and what will be. There's a saying: "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the "present".’’</p>
+                    <cite>Quote from <span class="author-name" role="contentinfo" aria-label="author name">the movie</span></cite>
                 </blockquote>
             </div>
 
@@ -86,96 +87,96 @@
                 <br /><br />I hope you are ready and your Oogway appears. And whispers in your ears-
             </p>
 
-            <figure>
-                <a href="" title=""><img src="img/img2.jpg" alt="" /></a>
-                <figcaption>Image from the movie "Kung Fu Panda"</figcaption>
+            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <a href="#" title="image"><img itemprop="url" src="img/img2.jpg" alt="image" /></a>
+                <figcaption itemprop="about">Image from the movie "Kung Fu Panda"</figcaption>
             </figure>
 
-            <div class="special-element">
-                <div id="rectangle2"></div>
+            <div class="special-element" role="doc-pullquote" aria-label="quote from the movie">
+                <div id="rectangle2" role="region" aria-hidden="true"></div>
                 <blockquote>
                     <p itemprop="citation"> ‘‘You must believe’’</p>
-                    <footer><cite>Quote from <span class="author-name">the movie</span></cite></footer>
+                    <footer><cite>Quote from <span class="author-name" role="contentinfo" aria-label="author name">the
+                movie</span></cite></footer>
                 </blockquote>
             </div>
 
 
-            <div id="tags">
+            <div id="tags" role="region" aria-label="list" itemprop="keywords">
                 <a href="#">
-                    <div class="article-tag">Mentorship</div>
+                    <div class="article-tag" role="region" aria-label="first keyword">Mentorship</div>
                 </a>
                 <a href="#">
-                    <div class="article-tag">Self Improvement</div>
+                    <div class="article-tag" role="region" aria-label="seconde keyword">Self Improvement</div>
                 </a>
                 <a href="#">
-                    <div class="article-tag">Startup Lessons</div>
+                    <div class="article-tag" role="region" aria-label="third keyword">Startup Lessons</div>
                 </a>
                 <a href="#">
-                    <div class="article-tag">Career Advice</div>
+                    <div class="article-tag" role="region" aria-label="fourth keyword">Career Advice</div>
                 </a>
                 <a href="#">
-                    <div class="article-tag">Workplace</div>
+                    <div class="article-tag" role="region" aria-label="fifth keyword">Workplace</div>
                 </a>
             </div>
 
-            <span class="separator"></span>
+            <span class="separator" role="separator" aria-hidden="true"></span>
 
             <section id="comments">
 
-                <div class="comments-container" role="article">
+                <div class="comments-container" role="list" aria-label="comments list">
 
-                    <div class="comment" role="img">
-                        <div class="author-commentimg">
-                            <img src="img/author1.png" alt="Jane Doe">
+                    <div class="comment" role="listitem" aria-label="comment" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+                        <div class="author-commentimg" role="img" aria-label="author comment img">
+                            <img src="img/author1.png" alt="Jane Doe" itemprop="image">
                         </div>
-                        <div class="comment-description">
-                            <p class="comments-author">Shalvika Sood</p>
-                            <p class="date"><time datetime="2018-03-14">August 8, 2018</time> | <a href="#_comments">6:35 pm</a></p>
-                            <p class="comment-content">Very well said Tarun! Love the Oogway analogy. Thanks for the pointers — A mentor is easily one of the most important people in ones life and finding the right person is a combination of a lot of hard work with intent on the
+                        <div class="comment-description" role="article" aria-label="comment content">
+                            <p class="comments-author" itemprop="author">Shalvika Sood</p>
+                            <p class="date" itemprop="dateCreated"><time datetime="2018-03-14">August 8, 2018</time> | <a href="#_comments">6:35 pm</a></p>
+                            <p class="comment-content" itemprop="text">Very well said Tarun! Love the Oogway analogy. Thanks for the pointers — A mentor is easily one of the most important people in ones life and finding the right person is a combination of a lot of hard work with intent on the
                                 part of the student and some degree of luck :)..or maybe in this case, luck favors those who strive! I like how you end with ‘You must believe’ because it all comes down to that.</p>
                         </div>
-                        <div class="comment-separator"></div>
+                        <div class="comment-separator" role="separator" aria-hidden="true"></div>
                     </div>
 
-                    <div class="comment">
-                        <div class="author-commentimg">
-                            <img src="img/author2.png" alt="Jane Doe">
+                    <div class="comment" role="listitem" aria-label="comment" itemscope itemtype="https://schema.org/Comment">
+                        <div class="author-commentimg" role="img" aria-label="author comment img">
+                            <img src="img/author2.png" alt="Jane Doe" itemprop="image">
                         </div>
-                        <div class="comment-description">
-                            <p class="comments-author">Jonathan Hetcher</p>
-                            <p class="date"><time datetime="2018-08-08">August 8, 2018</time> | <a href="#_comments">4:15 pm</a></p>
+                        <div class="comment-description" role="article" aria-label="comment content">
+                            <p class="comments-author" itemprop="author">Jonathan Hetcher</p>
+                            <p class="date" itemprop="dateCreated"><time datetime="2018-08-08">August 8, 2018</time> | <a href="#_comments">4:15 pm</a></p>
                             <p class="comment-content" itemprop="text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue commodo Euismod Vulputate. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
                                 ut </p>
                         </div>
-                        <div class="comment-separator"></div>
+                        <div class="comment-separator" role="separator" aria-hidden="true"></div>
                     </div>
 
-                    <div class="comment">
-                        <div class="author-commentimg">
-                            <img src="img/author3.png" alt="Jane Doe">
+                    <div class="comment" role="listitem" aria-label="comment" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+                        <div class="author-commentimg" role="img" aria-label="author comment img">
+                            <img src="img/author3.png" alt="Jane Doe" itemprop="image">
                         </div>
-                        <div class="comment-description">
-                            <p class="comments-author">Matthew Lenneman</p>
-                            <p class="date"><time datetime="2018-08-08">August 8, 2018</time> | <a href="#_comments">10:25 am</a></p>
+                        <div class="comment-description" role="article" aria-label="comment content">
+                            <p class="comments-author" itemprop="author">Matthew Lenneman</p>
+                            <p class="date" itemprop="dateCreated"><time datetime="2018-08-08">August 8, 2018</time> | <a href="#_comments">10:25 am</a></p>
                             <p class="comment-content" itemprop="text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue commodo Euismod Vulputate. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
                                 ut </p>
                         </div>
-                        <div class="comment-separator"></div>
+                        <div class="comment-separator" role="separator" aria-hidden="true"></div>
                     </div>
 
                 </div>
 
-                <div class="cta">
-                    <a href="#">
+                <div class="cta" role="region" aria-label="Button more comments">
+                    <a href="#" role="button">
                         <p>MORE COMMENTS</p>
                     </a>
                 </div>
 
             </section>
 
-
             <footer>
-                <p>© Medium</p>
+                <p>© <span role="region" aria-label="Copyright Holder" itemprop="copyrightHolder">Medium</span> - <span role="region" aria-label="Copyright Year" itemprop="copyrightYear">2020</span> -</p>
             </footer>
 
         </article>
